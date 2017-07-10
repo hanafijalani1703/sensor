@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libudev1=215-17+deb8u7 \
     python-pip \
     python-dev \
+    open-ssh \
     tcl && \
     apt-get clean && \
     apt-get -y autoclean && \
