@@ -50,9 +50,6 @@ COPY requirements.txt /requirements.txt
 
 WORKDIR /app/sitch
 
-RUN pip install virtualenv==15.1.0 && \
-    virtualenv venv && \
-    . ./venv/bin/activate && \
-    pip install -r /requirements.txt
+RUN pip install -r /requirements.txt
 
-CMD /app/sitch/venv/bin/python ./runner.py 2>&1
+CMD /usr/bin/python ./runner.py 2>&1
