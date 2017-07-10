@@ -24,7 +24,7 @@ class ConfigHelper:
         self.device_id = ConfigHelper.get_device_id()
         self.feed_radio_targets = self.get_list_from_env("FEED_RADIO_TARGETS")
         self.site_name = os.getenv('LOCATION_NAME', 'SITCH_SITE')
-        self.platform_name = utility.get_platform_name()
+        #self.platform_name = utility.get_platform_name()
         self.log_prefix = os.path.join(sitch_var_base_dir, "log/")
         self.log_host = ConfigHelper.get_from_env("LOG_HOST")
         self.log_method = "local_file"
